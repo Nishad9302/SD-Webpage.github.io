@@ -1,0 +1,44 @@
+#navbar{
+	width: 100vw;
+}
+#navbar ul{
+	flex-direction: column;
+	padding: 12px;
+}
+#navbar ul li a{
+	font-size: 20px;
+	
+}
+#img1 img{
+	position: absolute;
+	top: 255px;
+    width: 220px;
+}
+#img2 img{
+	width: 460px;
+    position: absolute;
+    top: 283px;
+}
+#img3 img {
+    position: absolute;
+    display: flex;
+    left: 26%;
+    top: 273px;
+    width: 234px;
+}
+#cpy{
+	display: inline-block;
+	position: absolute;
+	top:2630px;
+	width: 100vw;
+}
+#cntnt{
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width:80vw;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="vieport" content="width=device-width , initial scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MyE-Store:Smartphones:Samsung M51</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"media="screen And (max-width:1300px)"href="ResM51.css">
+</head>
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	#navbar{
+	display:flex;
+	align-items: center;
+	position: relative;
+}
+#navbar::before{
+	content: "";
+	background-color:blue;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.3;
+}
+#navbar ul{
+	display: flex;
+	margin: 15px;
+}
+#navbar ul li{
+	list-style: none;
+	font-size: 1.2rem;
+}
+#navbar ul li a{
+	color: white;
+	display: block;
+	padding:8px 24px;
+	border-radius:50px;
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;	
+}
+#navbar h1{
+	position: absolute;
+	right: 25px;
+    padding: 2px;
+ 	font-family: 'Bree Serif', serif;
+ 	color: white;
+}
+#navbar h1:hover{
+ 	color: black;
+ 	opacity: 0.2;
+ 	cursor: no-drop;
+}
+#navbar input{
+	margin: 20px;
+    display: flex;
+    position: absolute;
+    right: 200px;
+    width: 315px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+#navbar input[type='text'] {
+ 	padding: 4px;
+ 	font-size: 14px;
+ 	display: block;
+ 	height: 30px;
+ 	margin: auto;
+ 	text-align: center;
+}
+	#text{
+		font-family: 'Prompt', sans-serif;
+	}
+	#head{
+		font-size: 43px;
+    	position: absolute;
+    	left: 0px;
+    	top: 50px;
+		}
+	#subhead{
+		font-size: 38px;
+    	position: absolute;
+    	left: 0px;
+    	top: 113px;
+		}
+	#head,#subhead{
+		 display: inline-block;
+		 width: 100%;
+		background-color: lightpink;
+		}
+	#text img{
+		position: absolute;
+    	width: 260px;
+    	left: 115px;
+    	top: 1186px;
+	}
+	#maintxt{
+		position: absolute;
+	    top: 230px;
+	    left: 30px;
+	    width: 450px;
+	    font-size: 18px;
+	    font-family: 'Inconsolata', monospace;
+	    border: 1px solid black;
+	    padding: 20px 20px;
+	    line-height: 1.3;   
+	}
+	#photo img{
+		position: absolute;
+    	width: 600px;
+    	top: 190px;
+    	right: 110px;
+	}
+	#mtxt ul{
+		position: absolute;
+		width: 400px;
+		top: 200px;
+		background-color: #deffb8e0;
+		margin: 25px;
+	} 
+	#mtxt ul li{
+		padding: 10px
+	}
+	#byn{
+		position: absolute;
+		top: 770px;
+    	right: 270px;
+		display: inline-block;
+	}
+	#byn button{
+		margin: 14px;
+    	padding: 9px;
+    	font-size: 15px;
+    	font-family: 
+    	background-color: #e1f0f3d6;
+	}
+	#byn button:hover{
+		background-color: #a9eaf79e;
+	}
+	#tbl{
+		position: absolute;
+    	top: 850px;
+    	left: 700px;
+    	right: 120px;
+    	padding: 10px;
+    	font-size: 20px;
+    	font-family: 'Roboto Slab', serif;
+	}
+	td{
+		border:1px solid black;
+		background-color: #add8e6b8;
+	}
+	#cpy{
+	display: inline-block;
+	position: absolute;
+	top: 1335px;
+	width: 100%
+}
+#cpy h2{
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+	padding: 12px;
+	font-size: 18px;
+	background-color:greenyellow;
+}
+
+	#foto1 img{
+		position: absolute;
+    	width: 200px;
+    	left: 35%;
+    	top: 500px;
+	}
+	#foto2 img{
+		position: absolute;
+    	width: 120px;
+    	left: 38%;
+    	top: 246px;
+	}
+	#foto3 img{
+		position: absolute;
+    	width: 175px;
+    	left: 36%;
+    	top: 709px;
+    }
+    #foto4 img{
+		position: absolute;
+    	width: 192px;
+    	left: 35%;
+    	top: 923px;
+    }
+    #foto5 img{
+		position: absolute;
+   		width: 125px;
+   		left: 86%;
+   		top: 467px;
+    }
+    #foto6 img{
+		position: absolute;
+    	width: 96px;
+    	left: 38%;
+    	top: 1064px;
+    }
+    #foto1 img:hover{
+		transform: scale(1.2);
+    }
+    #foto2 img:hover{
+		transform: scale(1.2);
+    }
+    #foto3 img:hover{
+		transform: scale(1.2);
+    }
+    #foto4 img:hover{
+		transform: scale(1.2);
+    }
+    #foto5 img:hover{
+		transform: scale(1.2);
+    }
+    #foto6 img:hover{
+		transform: scale(1.2);
+    }
+</style>
+<body>
+	<nav id="navbar">
+		<ul>
+			<li class="item"><a href="#">Home</a></li>
+			<li class="item"><a href="Mobile.html" target="_blank">SmartPhones</a></li>
+			<li class="item"><a href="TV.html" target="_blank">TVs</a></li>
+			<li class="item"><a href="Sound.html" target="_blank">Speakers And Home Theatres</a></li>
+			<li class="item"><a href="#">Contact Us</a></li>
+		</ul>
+		<input type="text" placeholder="Search Here">
+		<h1>My E-Store</h1>
+	</nav>
+	<div id="text">
+		<h1 id="head">Samsung Galaxy M51</h1>
+		<h2 id="subhead">The Meanest Monster Ever</h2>
+		<img src="M51/monster.png">
+	</div>
+	<div id="mtxt">
+		<ul type="circle"> <h2>More information About Product</h2>
+			<li style="font-size: 20px;font-family:'Roboto Slab', serif;">Quad camera setup - 64MP (F1.8) main camera + 12MP (F2.2) ultra wide camera + 5MP (F2.4) depth camera + 5MP (F2.4) macro camera and 32MP (F2.2) front camera</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">16.95 cm (6.7-inch) sAMOLED Plus - Infinity-O display, FHD+ capacitive touchscreen with 1080 x 2400 pixels resolution, Contrast Ratio: 78960:1</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">Memory, Storage & SIM: 8GB RAM, 128GB internal memory expandable up to 512GB | Dedicated Memory slot</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">Android v10.0 operating system with 2.2GHz+1.8GHz Qualcomm | SD730G octa core processor</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">7000mAH lithium-ion battery | 25W USB Type-C to C fast charger in the box</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">Fast face unlock and Side Fingerprint sensor | Dual SIM (nano+nano) with dual standby and dual VoLTE | 3.5 mm headphone jack</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+			<li style="font-size: 20px;font-family: 'Roboto Slab', serif;">Box also includes: Travel adapter, USB Type-C to C, ejection pin and user manual</li>	
+		</ul> 
+		<div id="byn">
+			<button>BUY NOW</button>
+			<button>ADD TO CART</button>
+		</ul></div>		
+   </div>
+            <div id="photo">
+            	<img src="M51/phone.png">
+            </div>
+            <div id="foto1">
+            	<img src="M51/foto1.png">
+            </div>
+            <div id="foto2">
+            	<img src="M51/foto2.png">
+            </div>
+            <div id="foto3">
+            	<img src="M51/foto3.png">
+            </div>
+            <div id="foto4">
+            	<img src="M51/foto4.png">
+            </div>
+            <div id="foto5">
+            	<img src="M51/foto5.png">
+            </div>
+              <div id="foto6">
+            	<img src="M51/foto6.png">
+            </div>
+        </div>
+        <div id="tbl">
+        	<table>
+        		<tbody>
+        			<tr>
+        				<td>Specification&nbsp;&nbsp;</td>
+        				<td>Value</td>
+        			</tr>
+        			<tr>
+        				<td>OS&nbsp;&nbsp;</td>
+        				<td>Android</td>
+        			</tr>
+        			<tr>
+        				<td>RAM&nbsp;&nbsp;</td>
+        				<td>8GB</td>
+        			</tr>
+        			<tr>
+        				<td>Product Dimensions&nbsp;&nbsp;</td>
+        				<td>16.9 x 0.9 x 7.6 cm; 213 Grams</td>
+        			</tr>
+        			<tr>
+        				<td>camera features&nbsp;&nbsp;</td>
+        				<td>64 MP + 12MP + 5MP + 5MP</td>
+        			</tr>
+        			<tr>
+        				<td>Battery Power Rating&nbsp;&nbsp;</td>
+        				<td>7000mAH</td>
+        			</tr>
+        			<tr>
+        				<td>Display technology&nbsp;&nbsp;</td>
+        				<td>Super AMOLED Plus</td>
+        			</tr>
+        			<tr>
+        				<td>Colour&nbsp;&nbsp;</td>
+        				<td>Electric Blue</td>
+        			</tr>
+        			<tr>
+        				<td>Whats in the box&nbsp;&nbsp;</td>
+        				<td>Handset (Non-removable Battery Included), Travel Adapter, USB Cable, Ejection Pin and User Manual</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </div>
+        <div id="cpy">
+        	<h2> All CopyRights&#169; Reserved</h2>
+        </div>
+</body>
+</html>
